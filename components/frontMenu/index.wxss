@@ -1,0 +1,12 @@
+.show-front {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 80rpx;
+  height: 100%;
+}
+
+.show-front .title {
+  margin: auto 0px;
+}

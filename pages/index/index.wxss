@@ -1,4 +1,22 @@
-/**index.wxss**/
-page{
+page {
   background-color: black;
+}
+
+page .menu {
+  display: grid;
+  grid-auto-rows: 50px;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(2, 50%);
+}
+
+page .menu .menu-item {
+  color: white;
+  border-radius: 10px;
+  background: #1e1e1e;
+  margin: 10px;
+}
+
+page .menu .one-row {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }

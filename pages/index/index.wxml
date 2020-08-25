@@ -1,3 +1,8 @@
 <!--index.wxml-->
-<view class="container">
+<view class="menu">
+	<block wx:for="{{menus}}" wx:key="name" wx:for-item="menu">
+		<view class="menu-item {{menu.column === 2 ? 'one-row' : ''}}">
+			<text-animate type="{{menu.type}}" frontTitle="{{menu.frontTitle}}"></text-animate>
+		</view>
+	</block>
 </view>

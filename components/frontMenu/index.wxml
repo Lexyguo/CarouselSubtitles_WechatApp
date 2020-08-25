@@ -1,0 +1,6 @@
+<!--component/timeCount/index.wxml-->
+<view class="show-front">
+  <text wx:if="{{type === 'time'}}" class="title">{{nowTime[0]}}<text style="{{show?'':'color: rgb(30, 30, 30);'}}"> : </text>{{nowTime[1]}}</text>
+  <text wx:else class="title">{{frontTitle}}</text>
+</view>
+

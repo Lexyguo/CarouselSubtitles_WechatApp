@@ -1,0 +1,22 @@
+page{
+  background-color: black;
+
+  .menu{
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(2,50%);
+    
+    .menu-item{
+      color: white;
+      border-radius: 10px;
+      background: rgb(30, 30, 30);
+      margin: 10px;
+    }
+
+    .one-row{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}
