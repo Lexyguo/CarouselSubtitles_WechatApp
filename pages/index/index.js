@@ -13,7 +13,8 @@ Page({
       {
         type:'text',
         name:'carousel',
-        column:1
+        column:1,
+        frontTitle:'滚动字幕'
       },
       {
         type:'time',
@@ -29,5 +30,11 @@ Page({
     ]
   },
   onLoad: function () {
+  },
+  toView(e){
+    let type = e.currentTarget.dataset.type;
+    wx.navigateTo({
+      url: '../animationPage/index?type='+type
+    })
   }
 })

@@ -1,0 +1,4 @@
+<!--pages/animationPage/index.wxml-->
+<block wx:for="{{textContent}}" wx:key="index">
+  <text class="inner-text">{{item}}</text>
+</block>
